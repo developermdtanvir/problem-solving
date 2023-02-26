@@ -42,15 +42,24 @@ roll.forEach((number) => {
  * count the number word in a string
  * I am solve this problem one way but similar problem solve multiple way
  */
-const article = "Hello World how are you";
-
-const split = article.split(" ");
-console.log(split.length);
 
 // reverse string
 
 const reverseStr = (str) => {
-  const splitStr = str.split("").reverse().join("").toLowerCase();
-  console.log(splitStr);
+  const reversStr = str.split("").reverse().join("").toLowerCase();
+  return reversStr;
 };
 reverseStr("Tanvir");
+
+/*
+    <-- Problem Solving part - 2 -->
+*/
+
+// calculate factorial of a number  using for loop
+
+let factorial = 1;
+for (let i = 1; i <= 10; i++) {
+  factorial = factorial * i;
+  console.log(factorial, i);
+}
+console.log(factorial);
